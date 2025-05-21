@@ -1,0 +1,346 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2b2b2b;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #2b2b2b;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* Таймлайн истории */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.year-block {
+  width: 80%;
+  background: #2b2b2b;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 4px solid #f00; /* акцент в духе 90-х */
+}
+
+.year-block h2 {
+  margin: 0 0 5px;
+  font-size: 1.5em;
+  color: #ffcc00;
+}
+
+.year-block p {
+  margin: 0;
+  line-height: 1.4;
+}
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.member-card {
+  background: #2b2b2b;
+  width: 250px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.member-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.member-card h3 {
+  margin: 10px 0 5px;
+  color: #ffcc00;
+}
+.albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery figure {
+  background: #2b2b2b;
+  padding: 10px;
+}
+
+/* Gallery: CSS-only scroll-snap */
+.history-gallery {
+  padding: 40px 20px;
+}
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  scroll-snap-type: x mandatory;
+}
+.slide {
+  flex: 0 0 auto;
+  width: 300px;
+  scroll-snap-align: start;
+}
+.slide img {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+}
+/* Секция участников */
+.members-intro {
+  text-align: center;
+  padding: 40px 20px;
+  background: #111;
+  color: #fff;
+}
+
+.members-intro h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.members-intro p {
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Сетка карточек */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Карточка участника */
+.member-card {
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  border-color: #ffcc00;
+}
+
+.member-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.member-name {
+  font-size: 1.4em;
+  margin: 10px 0 5px;
+  color: #ffcc00;
+}
+
+.member-role {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.member-bio {
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+/* Вступительный блок Дискографии */
+.albums-intro {
+  text-align: center;
+  padding: 40px 20px;
+  background: #111;
+  color: #fff;
+}
+
+.albums-intro h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.albums-intro p {
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Сетка карточек альбомов */
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Карточка альбома */
+.album-card {
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.album-card:hover {
+  transform: translateY(-5px);
+  border-color: #ffcc00;
+}
+
+/* Обложка альбома */
+.album-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Список треков */
+.tracklist {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.tracklist li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+
+/* маркер трека */
+.tracklist li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  color: #ffcc00;
+  font-size: 0.8em;
+}
+
+/* Описание альбома */
+.album-desc {
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+/* Вступительный блок */
+.members-intro {
+  text-align: center;
+  padding: 40px 20px;
+  background: #111;
+  color: #fff;
+}
+
+.members-intro h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.members-intro p {
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Сетка участников */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Карточка участника */
+.member-card {
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  border-color: #ffcc00;
+}
+
+.member-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.member-name {
+  font-size: 1.4em;
+  margin: 10px 0 5px;
+  color: #ffcc00;
+}
+
+.member-role {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.member-bio {
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #ddd;
+}
