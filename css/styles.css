@@ -388,3 +388,37 @@ footer {
   font-size: 0.9em;
   color: #ccc;
 }
+.members-timeline .timeline-list {
+  list-style: none;
+  padding: 0;
+  counter-reset: step;
+}
+
+.members-timeline .timeline-list li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.members-timeline .timeline-list li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #ffcc00;
+  color: #111;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.members-highlights .highlight {
+  background: #111;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #ffcc00;
+}
