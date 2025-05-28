@@ -5,33 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Кино — Дискография</title>
   <meta name="description" content="Студийные альбомы группы «Кино»: обложки, треки и подробности." />
+  <meta property="og:title" content="Кино — Дискография" />
+  <meta property="og:description" content="Студийные альбомы группы «Кино»: обложки, треки и подробности." />
+  <meta property="og:image" content="images/blood.jpg" />
+  <meta property="og:url" content="https://example.com/albums.html" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
+    <h1 class="site-logo">Дискография группы «Кино»</h1>
     <nav class="main-nav" aria-label="Главное меню">
       <ul class="nav-list">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="history.html">История</a></li>
-        <li><a href="members.html">Участники</a></li>
-        <li><a href="albums.html" class="active">Дискография</a></li>
-        <li><a href="media.html">Фото и видео</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+        <li class="nav-item"><a href="history.html" class="nav-link">История</a></li>
+        <li class="nav-item"><a href="members.html" class="nav-link">Участники</a></li>
+        <li class="nav-item"><a href="albums.html" class="nav-link active">Дискография</a></li>
+        <li class="nav-item"><a href="media.html" class="nav-link">Фото и видео</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="albums" class="site-content">
-   
     <section class="albums-intro">
       <h2>Дискография</h2>
       <p>Альбомы, определившие звучание группы «Кино» и оставившие след в истории русской рок-музыки.</p>
     </section>
 
     <section class="albums-grid">
-
-      <!-- Альбом 45 -->
-      <div class="album-card">
-        <img class="album-cover" src="images/45.jpg" alt="Обложка альбома 45">
+      <article class="album-card">
+        <img class="album-cover" src="images/45.jpg" alt="Обложка альбома 45 группы Кино" loading="lazy" />
         <h3>45 (1982)</h3>
         <ul class="tracklist">
           <li>Мои друзья</li>
@@ -41,11 +45,10 @@
         <p class="album-desc">
           Дебютный альбом группы, записанный совместно с Борисом Гребенщиковым. Именно с него начался путь группы на сцене ленинградского рока.
         </p>
-      </div>
+      </article>
 
-      <!-- Альбом 46 -->
-      <div class="album-card">
-        <img class="album-cover" src="images/46.jpg" alt="Обложка альбома 46">
+      <article class="album-card">
+        <img class="album-cover" src="images/46.jpg" alt="Обложка альбома 46 группы Кино" loading="lazy" />
         <h3>46 (1983)</h3>
         <ul class="tracklist">
           <li>В наших глазах</li>
@@ -55,11 +58,10 @@
         <p class="album-desc">
           Второй альбом группы, показавший развитие стиля и эксперименты с мелодикой и текстами.
         </p>
-      </div>
+      </article>
 
-      <!-- Группа крови -->
-      <div class="album-card">
-        <img class="album-cover" src="images/blood.jpg" alt="Группа крови">
+      <article class="album-card">
+        <img class="album-cover" src="images/blood.jpg" alt="Обложка альбома Группа крови группы Кино" loading="lazy" />
         <h3>Группа крови (1988)</h3>
         <ul class="tracklist">
           <li>Группа крови</li>
@@ -69,11 +71,10 @@
         <p class="album-desc">
           Самый узнаваемый альбом, принесший группе всероссийскую славу. Символ перемен и свободы.
         </p>
-      </div>
+      </article>
 
-      <!-- Последний герой -->
-      <div class="album-card">
-        <img class="album-cover" src="images/hero.jpg" alt="Последний герой">
+      <article class="album-card">
+        <img class="album-cover" src="images/hero.jpg" alt="Обложка альбома Последний герой группы Кино" loading="lazy" />
         <h3>Последний герой (1989)</h3>
         <ul class="tracklist">
           <li>Последний герой</li>
@@ -83,11 +84,10 @@
         <p class="album-desc">
           Сборник, выпущенный для международной аудитории. Включает лучшие песни группы с нового мастеринга.
         </p>
-      </div>
+      </article>
 
-      <!-- Чёрный альбом -->
-      <div class="album-card">
-        <img class="album-cover" src="images/black.jpg" alt="Чёрный альбом">
+      <article class="album-card">
+        <img class="album-cover" src="images/black.jpg" alt="Обложка Чёрного альбома группы Кино" loading="lazy" />
         <h3>Чёрный альбом (1990)</h3>
         <ul class="tracklist">
           <li>Кукушка</li>
@@ -97,13 +97,14 @@
         <p class="album-desc">
           Посмертный альбом Виктора Цоя, завершён участниками группы. Тяжёлый и зрелый финал истории «Кино».
         </p>
-      </div>
-
+      </article>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2025 Проект «Группа Кино». Все права защищены.</p>
+    <p>© 2025 Проект «Группа Кино». Все права защищены.</p>
+    <p>Официальный сайт: <a href="https://example.com">https://example.com</a></p>
+    <p>Последнее обновление: 28 мая 2025</p>
   </footer>
 </body>
 </html>
