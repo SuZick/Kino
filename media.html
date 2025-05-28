@@ -3,70 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Кино — Участники</title>
-  <meta name="description" content="Биографии музыкантов рок-группы «Кино»: Виктор Цой, Игорь Тихомиров, Юрий Каспарян и другие." />
+  <title>Кино — Фото и видео</title>
+  <meta name="description" content="Фотографии и видео группы «Кино»: концерты, студийные записи, редкие кадры из жизни коллектива." />
+  <meta property="og:title" content="Кино — Фото и видео" />
+  <meta property="og:description" content="Фотографии и видео группы «Кино»: концерты, студийные записи, редкие кадры из жизни коллектива." />
+  <meta property="og:image" content="images/photo1.jpg" />
+  <meta property="og:url" content="https://example.com/media.html" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <h1 class="site-logo">Участники группы «Кино»</h1>
+    <h1 class="site-logo">Фото и видео группы «Кино»</h1>
     <nav class="main-nav" aria-label="Главное меню">
       <ul class="nav-list">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="history.html">История</a></li>
-        <li><a href="members.html" class="active">Участники</a></li>
-        <li><a href="albums.html">Дискография</a></li>
-        <li><a href="media.html">Фото и видео</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+        <li class="nav-item"><a href="history.html" class="nav-link">История</a></li>
+        <li class="nav-item"><a href="members.html" class="nav-link">Участники</a></li>
+        <li class="nav-item"><a href="albums.html" class="nav-link">Дискография</a></li>
+        <li class="nav-item"><a href="media.html" class="nav-link active">Фото и видео</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="members" class="site-content">
-    <!-- Вступление -->
-    <section class="members-gallery">
-  <!-- Пример одного фото; их должно быть 10–15 -->
-  <figure class="gallery-item">
-    <img src="images/photo1.jpg" alt="Группа Кино на концерте, 1990" />
-    <figcaption>Концерт в Лужниках, 1990</figcaption>
-  </figure>
-  <figure class="gallery-item">
-    <img src="images/photo2.jpg" alt="Виктор Цой в студии" />
-    <figcaption>Запись в студии Ленфильма</figcaption>
-  </figure>
-  <figure class="gallery-item">
-    <img src="images/photo3.jpg" alt="Юрий Каспарян" />
-    <figcaption>Юрий Каспарян играет гитару</figcaption>
-  </figure>
-  <figure class="gallery-item">
-    <img src="images/photo4.jpg" alt="Игорь Тихомиров" />
-    <figcaption>Игорь Тихомиров на репетиции</figcaption>
-  </figure>
-  <figure class="gallery-item">
-    <img src="images/photo5.jpg" alt="Живое выступление" />
-    <figcaption>Живое выступление 1988</figcaption>
-  </figure>
-  <figure class="gallery-item">
-    <img src="images/photo6.jpg" alt="Георгий Гурьянов за ударными" />
-    <figcaption>Гурьянов за ударными</figcaption>
-  </figure>
-  <figure class="gallery-item">
-    <img src="images/photo7.jpg" alt="Группа на улице" />
-    <figcaption>Прогулка по Ленинграду</figcaption>
-  </figure>
-    <figure class="gallery-item">
-    <img src="images/photo9.jpg" alt="Виктор Цой и фанаты" />
-    <figcaption>Встреча с поклонниками</figcaption>
-  </figure>
-  <figure class="gallery-item">
-    <img src="images/photo10.jpg" alt="Афиша конкурса" />
-    <figcaption>Создание афиши нового тура</figcaption>
-  </figure>
-  <!-- Добавьте ещё по тому же шаблону -->
-</section>
+  <main id="media" class="site-content">
+    <section class="media-intro">
+      <h2>Фото и видео</h2>
+      <p>Коллекция редких фотографий и видеозаписей группы «Кино»: от концертов до студийных моментов и встреч с поклонниками.</p>
+    </section>
+
+    <section class="gallery">
+      <figure class="gallery-item">
+        <img src="images/photo1.jpg" alt="Группа Кино на концерте в Лужниках, 1990 год" loading="lazy" />
+        <figcaption>Концерт в Лужниках, 1990</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/photo2.jpg" alt="Виктор Цой во время записи в студии Ленфильма" loading="lazy" />
+        <figcaption>Запись в студии Ленфильма</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/photo3.jpg" alt="Юрий Каспарян играет на гитаре во время концерта" loading="lazy" />
+        <figcaption>Юрий Каспарян на сцене</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/photo4.jpg" alt="Игорь Тихомиров на репетиции группы Кино" loading="lazy" />
+        <figcaption>Игорь Тихомиров на репетиции</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/photo5.jpg" alt="Живое выступление группы Кино в 1988 году" loading="lazy" />
+        <figcaption>Живое выступление, 1988</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/photo6.jpg" alt="Георгий Гурьянов за ударными на концерте" loading="lazy" />
+        <figcaption>Георгий Гурьянов за ударными</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/photo7.jpg" alt="Группа Кино на прогулке по Ленинграду" loading="lazy" />
+        <figcaption>Прогулка по Ленинграду</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/photo9.jpg" alt="Виктор Цой встречается с поклонниками" loading="lazy" />
+        <figcaption>Встреча с поклонниками</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/photo10.jpg" alt="Афиша концертного тура группы Кино" loading="lazy" />
+        <figcaption>Создание афиши нового тура</figcaption>
+      </figure>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2025 Проект «Группа Кино». Все права защищены.</p>
+    <p>© 2025 Проект «Группа Кино». Все права защищены.</p>
+    <p>Официальный сайт: <a href="https://example.com">https://example.com</a></p>
+    <p>Последнее обновление: 28 мая 2025</p>
   </footer>
 </body>
 </html>
