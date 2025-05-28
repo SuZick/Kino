@@ -326,3 +326,65 @@ body {
 .site-footer a:hover {
     text-decoration: underline;
 }
+.history-intro,
+.key-milestones,
+.turning-points,
+.final-chapter {
+    text-align: center;
+    padding: 40px 20px;
+    background: #111;
+    color: var(--text-color);
+}
+
+.history-intro h2,
+.key-milestones h2,
+.turning-points h2,
+.final-chapter h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.history-intro p,
+.key-milestones p,
+.turning-points p,
+.final-chapter p {
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.timeline-list {
+    list-style: none;
+    padding: 0;
+    counter-reset: step;
+}
+
+.timeline-list li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.timeline-list li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--accent-color);
+    color: #111;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.highlight {
+    background: #111;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--accent-color);
+}
