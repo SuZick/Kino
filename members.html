@@ -4,54 +4,70 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Кино — Участники</title>
+  <meta name="description" content="Участники группы «Кино» — Виктор Цой, Юрий Каспарян, Игорь Тихомиров, Георгий Гурьянов и их вклад в творчество." />
+  <meta property="og:title" content="Кино — Участники" />
+  <meta property="og:description" content="Участники группы «Кино» — Виктор Цой, Юрий Каспарян, Игорь Тихомиров, Георгий Гурьянов и их вклад в творчество." />
+  <meta property="og:image" content="images/tsoy.jpg" />
+  <meta property="og:url" content="https://example.com/members.html" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
-  <h1 class="site-logo">Участники группы «Кино»</h1>
-  <nav class="main-nav" aria-label="Главное меню">
-    <ul class="nav-list">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="history.html">История</a></li>
-      <li><a href="members.html" class="active">Участники</a></li>
-      <li><a href="albums.html">Дискография</a></li>
-      <li><a href="media.html">Фото и видео</a></li>
-    </ul>
-  </nav>
-</header>
+    <h1 class="site-logo">Участники группы «Кино»</h1>
+    <nav class="main-nav" aria-label="Главное меню">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+        <li class="nav-item"><a href="history.html" class="nav-link">История</a></li>
+        <li class="nav-item"><a href="members.html" class="nav-link active">Участники</a></li>
+        <li class="nav-item"><a href="albums.html" class="nav-link">Дискография</a></li>
+        <li class="nav-item"><a href="media.html" class="nav-link">Фото и видео</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main id="members" class="site-content">
+    <section class="members-intro">
+      <h2>Участники группы «Кино»</h2>
+      <p>Группа «Кино» — это легендарный коллектив, созданный Виктором Цоем. Узнайте о тех, кто сформировал её уникальное звучание и стиль.</p>
+    </section>
 
-  <main>
-    <section class="members">
-  <div class="member-card">
-    <img src="images/tsoy.jpg" alt="Виктор Цой">
-    <h3>Виктор Цой</h3>
-    <p>Вокал, гитара. Основатель группы. 21.06.1962–15.08.1990.</p>
-  </div>
+    <section class="members-grid">
+      <article class="member-card">
+        <img src="images/tsoy.jpg" alt="Виктор Цой, вокалист и гитарист группы Кино" class="member-photo" loading="lazy" />
+        <h3 class="member-name">Виктор Цой</h3>
+        <p class="member-role">Вокал, гитара</p>
+        <p class="member-bio">Основатель группы, 21.06.1962–15.08.1990. Его тексты и голос стали символом эпохи.</p>
+      </article>
 
-  <div class="member-card">
-    <img src="images/tikhomirov.jpg" alt="Игорь Тихомиров">
-    <h3>Игорь Тихомиров</h3>
-    <p>Бас-гитара. Участник с 1986 по 1991.</p>
-  </div>
+      <article class="member-card">
+        <img src="images/tikhomirov.jpg" alt="Игорь Тихомиров, бас-гитарист группы Кино" class="member-photo" loading="lazy" />
+        <h3 class="member-name">Игорь Тихомиров</h3>
+        <p class="member-role">Бас-гитара</p>
+        <p class="member-bio">Участник с 1986 по 1991. Принёс стабильную ритмическую основу в звучание группы.</p>
+      </article>
 
-  <div class="member-card">
-    <img src="images/kasparyan.jpg" alt="Юрий Каспарян">
-    <h3>Юрий Каспарян</h3>
-    <p>Ведущая гитара. Присоединился в 1988 году, соавтор фирменного «лирико-гранжевого» звучания.</p>
-  </div>
+      <article class="member-card">
+        <img src="images/kasparyan.jpg" alt="Юрий Каспарян, гитарист группы Кино" class="member-photo" loading="lazy" />
+        <h3 class="member-name">Юрий Каспарян</h3>
+        <p class="member-role">Ведущая гитара</p>
+        <p class="member-bio">Присоединился в 1988 году, соавтор фирменного «лирико-гранжевого» звучания.</p>
+      </article>
 
-  <div class="member-card">
-    <img src="images/guryanov.jpg" alt="Георгий Гурьянов">
-    <h3>Георгий Гурьянов</h3>
-    <p>Ударные. Родился 07.05.1961, присоединился в 1986 году, отвечал за ритмическую основу и сценический образ.</p>
-  </div>
-
-  <!-- другие участники -->
-</section>
-
+      <article class="member-card">
+        <img src="images/guryanov.jpg" alt="Георгий Гурьянов, барабанщик группы Кино" class="member-photo" loading="lazy" />
+        <h3 class="member-name">Георгий Гурьянов</h3>
+        <p class="member-role">Ударные</p>
+        <p class="member-bio">Родился 07.05.1961, присоединился в 1986 году, отвечал за ритмическую основу и сценический образ.</p>
+      </article>
+    </section>
   </main>
 
-  <footer>…</footer>
+  <footer class="site-footer">
+    <p>© 2025 Проект «Группа Кино». Все права защищены.</p>
+    <p>Официальный сайт: <a href="https://example.com">https://example.com</a></p>
+    <p>Последнее обновление: 28 мая 2025</p>
+  </footer>
 </body>
 </html>
