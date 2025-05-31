@@ -158,14 +158,28 @@
     <p>Официальный сайт: <a href="https://kino.band">https://kino.band/</a></p>
   </footer>
 
-  <script>
-    const canvas = document.getElementById('member-canvas');
-    const ctx = canvas.getContext('2d');
-    canvas.width = 300;
-    canvas.height = 100;
-    ctx.fillStyle = '#cc9900';
-    ctx.font = '20px Roboto';
-    ctx.fillText('Участники Кино', 50, 50);
-  </script>
+  <button id="scroll-to-top" title="Наверх">↑</button>
+<script>
+  const canvas = document.getElementById('member-canvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = 300;
+  canvas.height = 100;
+  ctx.fillStyle = '#cc9900';
+  ctx.font = '20px Roboto';
+  ctx.fillText('Участники Кино', 50, 50);
+
+  window.addEventListener('scroll', function() {
+    const button = document.getElementById('scroll-to-top');
+    if (window.scrollY > 300) {
+      button.style.display = 'block';
+    } else {
+      button.style.display = 'none';
+    }
+  });
+
+  document.getElementById('scroll-to-top').addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 </body>
 </html>

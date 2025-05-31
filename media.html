@@ -131,26 +131,13 @@
       </form>
     </section>
   </main>
-<button id="scroll-to-top" title="Наверх">↑</button>
-<script>
-        window.addEventListener('scroll', function() {
-            var button = document.getElementById('scroll-to-top');
-            if (window.scrollY > 300) { // Показать кнопку после 300px прокрутки
-                button.style.display = 'block';
-            } else {
-                button.style.display = 'none';
-            }
-        });
 
-        document.getElementById('scroll-to-top').addEventListener('click', function() {
-            window.scrollTo({ top: 0, behavior: 'smooth' }); // Плавная прокрутка наверх
-        });
-    </script>
   <footer class="site-footer">
     <p>© 2025 Проект «Группа Кино». Все права защищены.</p>
     <p class="align-right">Официальный сайт: <a href="https://kino.band">https://kino.band/</a></p>
   </footer>
 
+  <button id="scroll-to-top" title="Наверх">↑</button>
   <script>
     const canvas = document.getElementById('media-canvas');
     const ctx = canvas.getContext('2d');
@@ -159,6 +146,20 @@
     ctx.fillStyle = '#cc9900';
     ctx.font = '20px Roboto';
     ctx.fillText('Медиа Кино', 50, 50);
+
+    // Управление кнопкой "наверх"
+    window.addEventListener('scroll', function() {
+      const button = document.getElementById('scroll-to-top');
+      if (window.scrollY > 300) {
+        button.style.display = 'block';
+      } else {
+        button.style.display = 'none';
+      }
+    });
+
+    document.getElementById('scroll-to-top').addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   </script>
 </body>
 </html>
