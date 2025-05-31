@@ -12,9 +12,12 @@ html, body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+
+body.index-page {
+    overflow: hidden;
 }
 
 body {
@@ -29,14 +32,6 @@ body {
 
 .font-courier {
     font-family: 'Courier New', monospace;
-}
-
-.large-text {
-    font-size: 120%;
-}
-
-.align-justify {
-    text-align: justify;
 }
 
 .align-right {
@@ -92,7 +87,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     flex: 1;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #main {
