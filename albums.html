@@ -15,86 +15,141 @@
 </head>
 <body>
   <header class="site-header">
-    <h1 class="site-logo">Дискография группы «Кино»</h1>
+    <svg class="site-logo" width="40" height="40" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" fill="#cc9900" />
+      <text x="50" y="55" text-anchor="middle" fill="#111" font-size="20" font-family="Roboto, sans-serif">Кино</text>
+    </svg>
+    <h1 class="site-logo font-roboto">Дискография группы «Кино»</h1>
     <nav class="main-nav" aria-label="Главное меню">
       <ul class="nav-list">
-        <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
-        <li class="nav-item"><a href="history.html" class="nav-link">История</a></li>
-        <li class="nav-item"><a href="members.html" class="nav-link">Участники</a></li>
-        <li class="nav-item"><a href="albums.html" class="nav-link active">Дискография</a></li>
-        <li class="nav-item"><a href="media.html" class="nav-link">Фото и видео</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link font-roboto">Главная</a></li>
+        <li class="nav-item"><a href="history.html" class="nav-link font-roboto">История</a></li>
+        <li class="nav-item"><a href="members.html" class="nav-link font-roboto">Участники</a></li>
+        <li class="nav-item"><a href="albums.html" class="nav-link font-roboto active">Дискография</a></li>
+        <li class="nav-item"><a href="media.html" class="nav-link font-roboto">Фото и видео</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="albums" class="site-content">
     <section class="albums-intro">
-      <h2>Дискография</h2>
-      <p>Альбомы, определившие звучание группы «Кино» и оставившие след в истории русской рок-музыки.</p>
+      <h2 class="font-roboto">Дискография</h2>
+      <p class="large-text align-justify">Альбомы, определившие звучание группы «Кино» и оставившие след в истории русской рок-музыки.</p>
+      <canvas id="album-canvas" width="300" height="100"></canvas>
+    </section>
+
+    <section class="albums-table">
+      <h2 class="font-roboto">Обзор альбомов</h2>
+      <table class="album-table">
+        <thead>
+          <tr>
+            <th>Название</th>
+            <th>Год</th>
+            <th>Количество треков</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>45</td>
+            <td>1982</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>46</td>
+            <td>1983</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Группа крови</td>
+            <td>1988</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Последний герой</td>
+            <td>1989</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Чёрный альбом</td>
+            <td>1990</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <section class="albums-grid">
       <article class="album-card">
         <img class="album-cover" src="images/45.jpg" alt="Обложка альбома 45 группы Кино" loading="lazy" />
-        <h3>45 (1982)</h3>
+        <h3 class="font-roboto">45 (1982)</h3>
         <ul class="tracklist">
-          <li>Мои друзья</li>
-          <li>Электричка</li>
-          <li>45</li>
+          <li class="italic">Мои друзья</li>
+          <li class="italic">Электричка</li>
+          <li class="italic">45</li>
         </ul>
-        <p class="album-desc">
+        <p class="album-desc large-text align-justify">
           Дебютный альбом группы, записанный совместно с Борисом Гребенщиковым. Именно с него начался путь группы на сцене ленинградского рока.
         </p>
+        <ul class="album-info">
+          <li>Треки:
+            <ul>
+              <li>Мои друзья — автор: Виктор Цой</li>
+              <li>Электричка — автор: Виктор Цой</li>
+              <li>45 — автор: Виктор Цой</li>
+            </ul>
+          </li>
+        </ul>
       </article>
 
       <article class="album-card">
         <img class="album-cover" src="images/46.jpg" alt="Обложка альбома 46 группы Кино" loading="lazy" />
-        <h3>46 (1983)</h3>
+        <h3 class="font-roboto">46 (1983)</h3>
         <ul class="tracklist">
-          <li>В наших глазах</li>
-          <li>Троллейбус</li>
-          <li>Это - любовь</li>
+          <li class="italic">В наших глазах</li>
+          <li class="italic">Троллейбус</li>
+          <li class="italic">Это - любовь</li>
         </ul>
-        <p class="album-desc">
+        <p class="album-desc large-text align-justify">
           Второй альбом группы, показавший развитие стиля и эксперименты с мелодикой и текстами.
         </p>
       </article>
 
       <article class="album-card">
         <img class="album-cover" src="images/blood.jpg" alt="Обложка альбома Группа крови группы Кино" loading="lazy" />
-        <h3>Группа крови (1988)</h3>
+        <h3 class="font-roboto">Группа крови (1988)</h3>
         <ul class="tracklist">
-          <li>Группа крови</li>
-          <li>Закрой за мной дверь, я ухожу</li>
-          <li>Мама, мы все сошли с ума</li>
+          <li class="italic">Группа крови</li>
+          <li class="italic">Закрой за мной дверь, я ухожу</li>
+          <li class="italic">Мама, мы все сошли с ума</li>
         </ul>
-        <p class="album-desc">
+        <p class="album-desc large-text align-justify">
           Самый узнаваемый альбом, принесший группе всероссийскую славу. Символ перемен и свободы.
         </p>
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/6JAKZDL4PgY" title="Кино — Группа крови" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </article>
 
       <article class="album-card">
         <img class="album-cover" src="images/hero.jpg" alt="Обложка альбома Последний герой группы Кино" loading="lazy" />
-        <h3>Последний герой (1989)</h3>
+        <h3 class="font-roboto">Последний герой (1989)</h3>
         <ul class="tracklist">
-          <li>Последний герой</li>
-          <li>Следи за собой</li>
-          <li>Печаль</li>
+          <li class="italic">Последний герой</li>
+          <li class="italic">Следи за собой</li>
+          <li class="italic">Печаль</li>
         </ul>
-        <p class="album-desc">
+        <p class="album-desc large-text align-justify">
           Сборник, выпущенный для международной аудитории. Включает лучшие песни группы с нового мастеринга.
         </p>
       </article>
 
       <article class="album-card">
         <img class="album-cover" src="images/black.jpg" alt="Обложка Чёрного альбома группы Кино" loading="lazy" />
-        <h3>Чёрный альбом (1990)</h3>
+        <h3 class="font-roboto">Чёрный альбом (1990)</h3>
         <ul class="tracklist">
-          <li>Кукушка</li>
-          <li>Невесёлая песня</li>
-          <li>Сказка</li>
+          <li class="italic">Кукушка</li>
+          <li class="italic">Невесёлая песня</li>
+          <li class="italic">Сказка</li>
         </ul>
-        <p class="album-desc">
+        <p class="album-desc large-text align-justify">
           Посмертный альбом Виктора Цоя, завершён участниками группы. Тяжёлый и зрелый финал истории «Кино».
         </p>
       </article>
@@ -105,5 +160,15 @@
     <p>© 2025 Проект «Группа Кино». Все права защищены.</p>
     <p>Официальный сайт: <a href="https://kino.band">https://kino.band/</a></p>
   </footer>
+
+  <script>
+    const canvas = document.getElementById('album-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = 300;
+    canvas.height = 100;
+    ctx.fillStyle = '#cc9900';
+    ctx.font = '20px Roboto';
+    ctx.fillText('Дискография Кино', 50, 50);
+  </script>
 </body>
 </html>

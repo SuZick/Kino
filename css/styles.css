@@ -524,3 +524,9 @@ iframe {
 .contact-form button:hover {
     background: #e6b800;
 }
+.large-text { font-size: 120%; }
+.italic { font-style: italic; }
+.align-justify { text-align: justify; text-indent: 2em; line-height: 1.5; }
+.align-right { text-align: right; }
+.album-table { border-collapse: collapse; width: 100%; }
+.album-table th, .album-table td { border: 1px solid #ddd; padding: 8px; }
