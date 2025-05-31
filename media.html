@@ -15,67 +15,136 @@
 </head>
 <body>
   <header class="site-header">
-    <h1 class="site-logo">Фото и видео группы «Кино»</h1>
+    <svg class="site-logo" width="40" height="40" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" fill="#cc9900" />
+      <text x="50" y="55" text-anchor="middle" fill="#111" font-size="20" font-family="Roboto, sans-serif">Кино</text>
+    </svg>
+    <h1 class="site-logo font-roboto">Фото и видео группы «Кино»</h1>
     <nav class="main-nav" aria-label="Главное меню">
       <ul class="nav-list">
-        <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
-        <li class="nav-item"><a href="history.html" class="nav-link">История</a></li>
-        <li class="nav-item"><a href="members.html" class="nav-link">Участники</a></li>
-        <li class="nav-item"><a href="albums.html" class="nav-link">Дискография</a></li>
-        <li class="nav-item"><a href="media.html" class="nav-link active">Фото и видео</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link font-roboto">Главная</a></li>
+        <li class="nav-item"><a href="history.html" class="nav-link font-roboto">История</a></li>
+        <li class="nav-item"><a href="members.html" class="nav-link font-roboto">Участники</a></li>
+        <li class="nav-item"><a href="albums.html" class="nav-link font-roboto">Дискография</a></li>
+        <li class="nav-item"><a href="media.html" class="nav-link font-roboto active">Фото и видео</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="media" class="site-content">
     <section class="media-intro">
-      <h2>Фото и видео</h2>
-      <p>Коллекция редких фотографий и видеозаписей группы «Кино»: от концертов до студийных моментов и встреч с поклонниками.</p>
+      <h2 class="font-roboto">Фото и видео</h2>
+      <p class="large-text align-justify">Коллекция редких фотографий и видеозаписей группы «Кино»: от концертов до студийных моментов и встреч с поклонниками. Эти материалы позволяют погрузиться в атмосферу творчества группы и её влияния на российскую рок-культуру.</p>
+      <canvas id="media-canvas" width="300" height="100"></canvas>
+    </section>
+
+    <section class="media-table">
+      <h2 class="font-roboto">Медиа-архив</h2>
+      <table class="media-table">
+        <thead>
+          <tr>
+            <th>Тип</th>
+            <th>Описание</th>
+            <th>Год</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Фото</td>
+            <td>Концерт в Лужниках</td>
+            <td>1990</td>
+          </tr>
+          <tr>
+            <td>Видео</td>
+            <td>Запись в студии Ленфильма</td>
+            <td>1988</td>
+          </tr>
+          <tr>
+            <td>Фото</td>
+            <td>Юрий Каспарян на сцене</td>
+            <td>1989</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <section class="gallery">
       <figure class="gallery-item">
         <img src="images/photo1.jpg" alt="Группа Кино на концерте в Лужниках, 1990 год" loading="lazy" />
-        <figcaption>Концерт в Лужниках, 1990</figcaption>
+        <figcaption class="font-courier italic">Концерт в Лужниках, 1990</figcaption>
       </figure>
       <figure class="gallery-item">
         <img src="images/photo2.jpg" alt="Виктор Цой во время записи в студии Ленфильма" loading="lazy" />
-        <figcaption>Запись в студии Ленфильма</figcaption>
+        <figcaption class="font-courier italic">Запись в студии Ленфильма</figcaption>
       </figure>
       <figure class="gallery-item">
         <img src="images/photo3.jpg" alt="Юрий Каспарян играет на гитаре во время концерта" loading="lazy" />
-        <figcaption>Юрий Каспарян на сцене</figcaption>
+        <figcaption class="font-courier italic">Юрий Каспарян на сцене</figcaption>
       </figure>
       <figure class="gallery-item">
         <img src="images/photo4.jpg" alt="Игорь Тихомиров на репетиции группы Кино" loading="lazy" />
-        <figcaption>Игорь Тихомиров на репетиции</figcaption>
+        <figcaption class="font-courier italic">Игорь Тихомиров на репетиции</figcaption>
       </figure>
       <figure class="gallery-item">
         <img src="images/photo5.jpg" alt="Живое выступление группы Кино в 1988 году" loading="lazy" />
-        <figcaption>Живое выступление, 1988</figcaption>
+        <figcaption class="font-courier italic">Живое выступление, 1988</figcaption>
       </figure>
       <figure class="gallery-item">
         <img src="images/photo6.jpg" alt="Георгий Гурьянов за ударными на концерте" loading="lazy" />
-        <figcaption>Георгий Гурьянов за ударными</figcaption>
+        <figcaption class="font-courier italic">Георгий Гурьянов за ударными</figcaption>
       </figure>
       <figure class="gallery-item">
         <img src="images/photo7.jpg" alt="Группа Кино на прогулке по Ленинграду" loading="lazy" />
-        <figcaption>Прогулка по Ленинграду</figcaption>
+        <figcaption class="font-courier italic">Прогулка по Ленинграду</figcaption>
       </figure>
       <figure class="gallery-item">
         <img src="images/photo9.jpg" alt="Виктор Цой встречается с поклонниками" loading="lazy" />
-        <figcaption>Встреча с поклонниками</figcaption>
+        <figcaption class="font-courier italic">Встреча с поклонниками</figcaption>
       </figure>
       <figure class="gallery-item">
         <img src="images/photo10.jpg" alt="Афиша концертного тура группы Кино" loading="lazy" />
-        <figcaption>Создание афиши нового тура</figcaption>
+        <figcaption class="font-courier italic">Создание афиши нового тура</figcaption>
       </figure>
+    </section>
+
+    <section class="video-section">
+      <h2 class="font-roboto">Видео</h2>
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/6JAKZDL4PgY" title="Кино — Группа крови" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p class="video-desc large-text align-justify">Клип на песню «Группа крови» — один из самых известных хитов группы, символизирующий дух перемен в конце 80-х.</p>
+    </section>
+
+    <section class="media-form">
+      <h2 class="font-roboto">Обратная связь</h2>
+      <form class="contact-form">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="subject">Тема:</label>
+        <select id="subject" name="subject">
+          <option value="question">Вопрос</option>
+          <option value="feedback">Отзыв</option>
+        </select>
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="3" required></textarea>
+        <button type="button">Отправить</button>
+      </form>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>© 2025 Проект «Группа Кино». Все права защищены.</p>
-    <p>Официальный сайт: <a href="https://kino.band">https://kino.band/</a></p>
+    <p class="align-right">Официальный сайт: <a href="https://kino.band">https://kino.band/</a></p>
   </footer>
+
+  <script>
+    const canvas = document.getElementById('media-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = 300;
+    canvas.height = 100;
+    ctx.fillStyle = '#cc9900';
+    ctx.font = '20px Roboto';
+    ctx.fillText('Медиа Кино', 50, 50);
+  </script>
 </body>
 </html>

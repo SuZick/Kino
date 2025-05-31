@@ -530,3 +530,13 @@ iframe {
 .align-right { text-align: right; }
 .album-table { border-collapse: collapse; width: 100%; }
 .album-table th, .album-table td { border: 1px solid #ddd; padding: 8px; }
+.font-roboto { font-family: 'Roboto', sans-serif; font-weight: bold; }
+.font-courier { font-family: 'Courier New', monospace; }
+.large-text { font-size: 120%; }
+.italic { font-style: italic; }
+.align-justify { text-align: justify; text-indent: 2em; line-height: 1.5; }
+.align-right { text-align: right; }
+.media-table { border-collapse: collapse; width: 100%; }
+.media-table th, .media-table td { border: 1px solid #ddd; padding: 8px; }
+.contact-form { display: flex; flex-direction: column; }
+.contact-form input, .contact-form select, .contact-form textarea { margin-bottom: 10px; }
