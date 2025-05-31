@@ -15,64 +15,153 @@
 </head>
 <body>
   <header class="site-header">
-    <h1 class="site-logo">Группа «Кино»</h1>
+    <svg class="site-logo" width="60" height="60" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" fill="#cc9900" />
+      <text x="50" y="55" text-anchor="middle" fill="#111" font-size="20" font-family="Roboto, sans-serif">Кино</text>
+    </svg>
+    <h1 class="site-logo font-roboto">Группа «Кино»</h1>
     <nav class="main-nav" aria-label="Главное меню">
       <ul class="nav-list">
-        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-        <li class="nav-item"><a class="nav-link" href="history.html">История</a></li>
-        <li class="nav-item"><a class="nav-link" href="members.html">Участники</a></li>
-        <li class="nav-item"><a class="nav-link" href="albums.html">Дискография</a></li>
-        <li class="nav-item"><a class="nav-link" href="media.html">Фото и видео</a></li>
+        <li class="nav-item"><a class="nav-link font-roboto" href="index.html">Главная</a></li>
+        <li class="nav-item"><a class="nav-link font-roboto" href="history.html">История</a></li>
+        <li class="nav-item"><a class="nav-link font-roboto" href="members.html">Участники</a></li>
+        <li class="nav-item"><a class="nav-link font-roboto" href="albums.html">Дискография</a></li>
+        <li class="nav-item"><a class="nav-link font-roboto" href="media.html">Фото и видео</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main" class="site-content">
     <section class="hero">
-      <h2 class="hero-title">Добро пожаловать</h2>
-      <p class="hero-text">Этот сайт посвящён культовой рок-группе «Кино» и её творчеству в 90-х годах.</p>
-      <img class="hero-image" src="images/banner.jpg" alt="Виктор Цой на фоне концерта, 1990 год" loading="lazy" />
+      <h2 class="hero-title font-roboto">Добро пожаловать</h2>
+      <p class="hero-text align-justify">Этот сайт посвящён культовой рок-группе «Кино» и её творчеству в 80-х и 90-х годах. Здесь вы найдёте историю группы, биографии участников, дискографию и редкие медиа-материалы.</p>
+      <figure>
+        <img class="hero-image" src="images/banner.jpg" alt="Виктор Цой на фоне концерта, 1990 год" loading="lazy" />
+        <figcaption class="font-courier align-right">Виктор Цой, концерт 1990 года</figcaption>
+      </figure>
+      <canvas id="stars-canvas" width="800" height="100"></canvas>
     </section>
 
     <div class="previews-container">
       <section class="brief-history">
-        <h2>Краткая история</h2>
-        <p>Группа "Кино" была основана в 1982 году Виктором Цоем и Алексеем Рыбиным. Их музыка стала символом перемен.</p>
+        <h2 class="font-roboto">Краткая история</h2>
+        <p class="large-text align-justify">Группа «Кино» была основана в 1982 году Виктором Цоем и Алексеем Рыбиным. Их музыка стала символом перемен в советском обществе.</p>
         <a href="history.html">Узнать больше</a>
       </section>
 
       <section class="members-preview">
-        <h2>Участники</h2>
+        <h2 class="font-roboto">Участники</h2>
         <ul>
-          <li>Виктор Цой — вокал, гитара</li>
-          <li>Юрий Каспарян — гитара</li>
-          <li>Игорь Тихомиров — бас-гитара</li>
-          <li>Георгий Гурьянов — ударные</li>
+          <li>Виктор Цой
+            <ul>
+              <li>Вокал, гитара</li>
+              <li>Автор песен</li>
+            </ul>
+          </li>
+          <li>Юрий Каспарян
+            <ul>
+              <li>Гитара</li>
+            </ul>
+          </li>
+          <li>Игорь Тихомиров
+            <ul>
+              <li>Бас-гитара</li>
+            </ul>
+          </li>
+          <li>Георгий Гурьянов
+            <ul>
+              <li>Ударные</li>
+            </ul>
+          </li>
         </ul>
         <a href="members.html">Подробнее</a>
       </section>
 
       <section class="albums-preview">
-        <h2>Дискография</h2>
-        <ul>
-          <li>45 (1982)</li>
-          <li>Группа крови (1988)</li>
-          <li>Чёрный альбом (1990)</li>
-        </ul>
+        <h2 class="font-roboto">Дискография</h2>
+        <table class="album-table">
+          <thead>
+            <tr>
+              <th>Альбом</th>
+              <th>Год</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>45</td>
+              <td>1982</td>
+            </tr>
+            <tr>
+              <td>Группа крови</td>
+              <td>1988</td>
+            </tr>
+            <tr>
+              <td>Чёрный альбом</td>
+              <td>1990</td>
+            </tr>
+          </tbody>
+        </table>
         <a href="albums.html">Все альбомы</a>
       </section>
 
       <section class="media-preview">
-        <h2>Фото и видео</h2>
-        <p>Редкие записи и фото группы "Кино".</p>
+        <h2 class="font-roboto">Фото и видео</h2>
+        <p class="large-text align-justify">Редкие записи и фото группы «Кино».</p>
+        <iframe width="100%" height="150" src="https://www.youtube.com/embed/6JAKZDL4PgY" title="Кино — Группа крови" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <a href="media.html">Перейти</a>
       </section>
     </div>
   </main>
 
   <footer class="site-footer">
+    <div class="contact-form">
+      <h2 class="font-roboto">Связаться с нами</h2>
+      <div class="form-container">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="subject">Тема:</label>
+        <select id="subject" name="subject">
+          <option value="question">Вопрос</option>
+          <option value="feedback">Отзыв</option>
+        </select>
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="3" required></textarea>
+        <button type="button">Отправить</button>
+      </div>
+    </div>
     <p>© 2025 Проект «Группа Кино». Все права защищены.</p>
     <p>Официальный сайт: <a href="https://kino.band">https://kino.band/</a></p>
   </footer>
+
+  <script>
+    const canvas = document.getElementById('stars-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = canvas.offsetWidth;
+    canvas.height = 100;
+    const stars = [];
+    for (let i = 0; i < 50; i++) {
+      stars.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 1.5,
+        speed: Math.random() * 0.5
+      });
+    }
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      stars.forEach(star => {
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+        ctx.fillStyle = '#f0f0f0';
+        ctx.fill();
+        star.x -= star.speed;
+        if (star.x < 0) star.x = canvas.width;
+      });
+      requestAnimationFrame(animate);
+    }
+    animate();
+  </script>
 </body>
 </html>
