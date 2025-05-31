@@ -101,94 +101,51 @@ body {
 
 .hero {
     text-align: center;
-    padding: 10px;
+    padding: 8px;
     background: #111;
     border-radius: 8px;
+    height: calc(100% - 16px);
 }
 
 .hero-title {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 700;
     color: var(--accent-color);
     margin-bottom: 5px;
-}
-
-.hero-text {
-    font-size: 0.9em;
-    color: var(--text-color);
-    max-width: 500px;
-    margin: 0 auto 10px;
-    text-indent: 15px;
-    line-height: 1.4;
 }
 
 .hero-image {
     width: 100%;
-    max-width: 400px;
+    max-width: 250px;
     height: auto;
     border-radius: 4px;
-    margin-top: 5px;
+    margin: 5px auto;
 }
 
-.previews-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-    padding: 10px;
-    max-height: 200px;
-    overflow: hidden;
-}
-
-.brief-history,
-.members-preview,
-.albums-preview,
-.media-preview {
-    background: #2b2b2b;
-    padding: 10px;
-    border-radius: 8px;
+.site-footer {
+    background-color: #2b2b2b;
     text-align: center;
+    padding: 5px;
+    border-top: 2px solid var(--border-color);
+    width: 100%;
+}
+
+.site-footer p {
+    margin: 2px 0;
     font-size: 0.8em;
 }
 
-.brief-history h2,
-.members-preview h2,
-.albums-preview h2,
-.media-preview h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
-    font-weight: 700;
-    color: var(--accent-color);
-    margin-bottom: 5px;
-}
-
-.brief-history p,
-.members-preview p,
-.media-preview p {
-    font-size: 0.8em;
-    color: var(--text-color);
-    text-indent: 10px;
-    line-height: 1.4;
-    text-align: justify;
-}
-
-.brief-history a,
-.members-preview a,
-.albums-preview a,
-.media-preview a {
+.site-footer a {
     color: var(--accent-color);
     text-decoration: none;
-    font-weight: bold;
-    font-size: 0.8em;
 }
 
-.brief-history a:hover,
-.members-preview a:hover,
-.albums-preview a:hover,
-.media-preview a:hover {
+.site-footer a:hover {
     text-decoration: underline;
 }
 
+/* Стили для других страниц */
 .albums-intro,
 .members-intro {
     text-align: center;
@@ -382,29 +339,6 @@ body {
     margin-top: 5px;
 }
 
-.site-footer {
-    background-color: #2b2b2b;
-    text-align: center;
-    padding: 5px;
-    border-top: 2px solid var(--border-color);
-    width: 100%;
-}
-
-.site-footer p {
-    margin: 2px 0;
-    font-size: 0.8em;
-    text-align: right;
-}
-
-.site-footer a {
-    color: var(--accent-color);
-    text-decoration: none;
-}
-
-.site-footer a:hover {
-    text-decoration: underline;
-}
-
 .history-intro,
 .key-milestones,
 .turning-points,
@@ -509,32 +443,6 @@ body {
     text-indent: 20px;
     line-height: 1.5;
     text-align: justify;
-}
-
-.album-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 5px 0;
-    background: #2b2b2b;
-    color: var(--text-color);
-}
-
-.album-table th,
-.album-table td {
-    border: 1px solid var(--border-color);
-    padding: 5px;
-    text-align: center;
-    font-size: 0.8em;
-}
-
-.album-table th {
-    background: var(--accent-color);
-    color: #111;
-    font-family: 'Roboto', sans-serif;
-}
-
-.album-table td {
-    font-family: Arial, sans-serif;
 }
 
 .contact-form {
