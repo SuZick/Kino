@@ -138,7 +138,21 @@
       </article>
     </section>
   </main>
+<button id="scroll-to-top" title="Наверх">↑</button>
+<script>
+        window.addEventListener('scroll', function() {
+            var button = document.getElementById('scroll-to-top');
+            if (window.scrollY > 300) { // Показать кнопку после 300px прокрутки
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        });
 
+        document.getElementById('scroll-to-top').addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Плавная прокрутка наверх
+        });
+    </script>
   <footer class="site-footer">
     <p>© 2025 Проект «Группа Кино». Все права защищены.</p>
     <p>Официальный сайт: <a href="https://kino.band">https://kino.band/</a></p>
