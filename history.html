@@ -5,67 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Кино — История создания</title>
   <meta name="description" content="История создания группы «Кино», ключевые вехи и переломные моменты." />
+  <meta property="og:title" content="Кино — История создания" />
+  <meta property="og:description" content="История создания группы «Кино», ключевые вехи и переломные моменты." />
+  <meta property="og:image" content="images/kino-history.jpg" />
+  <meta property="og:url" content="https://example.com/history.html" />
+  <meta property="og:type" content="website" />
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <h1 class="site-logo">История создания группы «Кино»</h1>
+    <svg class="site-logo" width="40" height="40" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" fill="#cc9900" />
+      <text x="50" y="55" text-anchor="middle" fill="#111" font-size="20" font-family="Roboto, sans-serif">Кино</text>
+    </svg>
+    <h1 class="site-logo font-roboto">История создания группы «Кино»</h1>
     <nav class="main-nav" aria-label="Главное меню">
       <ul class="nav-list">
-        <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
-        <li class="nav-item"><a href="history.html" class="nav-link">История</a></li>
-        <li class="nav-item"><a href="members.html" class="nav-link active">Участники</a></li>
-        <li class="nav-item"><a href="albums.html" class="nav-link">Дискография</a></li>
-        <li class="nav-item"><a href="media.html" class="nav-link">Фото и видео</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link font-roboto">Главная</a></li>
+        <li class="nav-item"><a href="history.html" class="nav-link font-roboto active">История</a></li>
+        <li class="nav-item"><a href="members.html" class="nav-link font-roboto">Участники</a></li>
+        <li class="nav-item"><a href="albums.html" class="nav-link font-roboto">Дискография</a></li>
+        <li class="nav-item"><a href="media.html" class="nav-link font-roboto">Фото и видео</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="history" class="site-content">
     <section class="history-intro">
-      <h2>Рождение легенды</h2>
-      <p>Группа «Кино» была основана в 1982 году в Ленинграде Виктором Цоем и Алексеем Рыбиным. Их цель — донести искренние эмоции и социальные послания через музыку.</p>
+      <h2 class="font-roboto">Рождение легенды</h2>
+      <p class="large-text align-justify">Группа «Кино» была основана в 1982 году в Ленинграде Виктором Цоем и Алексеем Рыбиным. Их цель — донести искренние эмоции и социальные послания через музыку.</p>
+      <figure>
+        <img class="history-image" src="images/kino-1982.jpg" alt="Группа Кино, 1982 год" loading="lazy" />
+        <figcaption class="font-courier align-right">Ленинград, 1982</figcaption>
+      </figure>
+      <p class="quote font-courier italic">«Мы не хотели быть похожими на других. Мы хотели быть собой.» — Виктор Цой</p>
     </section>
 
     <section class="key-milestones">
-      <h2>Ключевые вехи</h2>
+      <h2 class="font-roboto">Ключевые вехи</h2>
       <ul class="timeline-list" role="list">
         <li role="listitem">
-          <strong>1982:</strong> Первая репетиция и запись демо-ленты «45» совместно с Борисом Гребенщиковым.
+          <strong>1982:</strong> Первая репетиция и запись демо-ленты «45».
+          <ul>
+            <li>Совместная работа с Борисом Гребенщиковым.</li>
+            <li>Выступления в ленинградских клубах.</li>
+          </ul>
         </li>
         <li role="listitem">
-          <strong>1984:</strong> Формирование классического состава — Цой, Каспарян, Гурьянов; первые концерты на рок-клубах.
+          <strong>1984:</strong> Формирование классического состава.
+          <ul>
+            <li>Виктор Цой, Юрий Каспарян, Георгий Гурьянов.</li>
+            <li>Первые концерты в рок-клубах.</li>
+          </ul>
         </li>
         <li role="listitem">
-          <strong>1988:</strong> Выход альбома «Группа крови» и большой тур по городам СССР.
+          <strong>1988:</strong> Выход альбома «Группа крови».
+          <ul>
+            <li>Большой тур по СССР.</li>
+            <li>Популярность среди молодёжи.</li>
+          </ul>
         </li>
         <li role="listitem">
-          <strong>1989:</strong> Релиз «Последнего героя» для зарубежной аудитории.
+          <strong>1989:</strong> Релиз «Последнего героя».
+          <ul>
+            <li>Запись для зарубежной аудитории.</li>
+            <li>Концерты в Европе.</li>
+          </ul>
         </li>
       </ul>
     </section>
 
-    <section class="turning-points">
-      <h2>Переломные моменты</h2>
-      <article class="highlight">
-        <h3>Концерт в Олимпийском</h3>
-        <p>В 1989 году «Кино» выступили на главной арене страны — спорткомплексе «Олимпийский», закрепив статус культового коллектива.</p>
-      </article>
-      <article class="highlight">
-        <h3>Интернациональный прорыв</h3>
-        <p>Релиз «Последнего героя» и сотрудничество с зарубежными лейблами открыло двери на мировую сцену.</p>
-      </article>
+    <section class="history-table">
+      <h2 class="font-roboto">Основные события</h2>
+      <table class="event-table">
+        <thead>
+          <tr>
+            <th>Год</th>
+            <th>Событие</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1982</td>
+            <td>Основание группы «Кино»</td>
+          </tr>
+          <tr>
+            <td>1988</td>
+            <td>Выпуск альбома «Группа крови»</td>
+          </tr>
+          <tr>
+            <td>1990</td>
+            <td>Выпуск «Чёрного альбома»</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <section class="final-chapter">
-      <h2>Финальная глава: Чёрный альбом и смерть Виктора Цоя</h2>
-      <p>
-        В 1990 году был выпущен посмертный «Чёрный альбом», который завершил историю группы. Альбом был доработан и записан участниками коллектива после трагической гибели Виктора Цоя в том же году.
-      </p>
-      <p>
-        Смерть Виктора стала шоком для всей страны и рок-сцены. Его творчество осталось символом свободы и надежды для многих поколений.
-      </p>
+      <h2 class="font-roboto">Финальная глава</h2>
+      <p class="large-text align-justify">В 1990 году был выпущен посмертный «Чёрный альбом», завершённый участниками после гибели Виктора Цоя.</p>
+      <p class="quote font-courier italic">«Перемен требуют наши сердца!» — из песни «Перемен»</p>
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/6JAKZDL4PgY" title="Кино — Группа крови" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
   </main>
 

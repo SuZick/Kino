@@ -34,8 +34,20 @@ body {
     font-family: 'Courier New', monospace;
 }
 
+.large-text {
+    font-size: 120%;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
 .align-right {
     text-align: right;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .site-header {
@@ -118,6 +130,15 @@ body {
     margin: 5px auto;
 }
 
+.history-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 4px;
+    margin: 10px auto;
+    display: block;
+}
+
 .site-footer {
     background-color: #2b2b2b;
     text-align: center;
@@ -138,6 +159,125 @@ body {
 
 .site-footer a:hover {
     text-decoration: underline;
+}
+
+.history-intro,
+.key-milestones,
+.history-table,
+.final-chapter {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.history-intro h2,
+.key-milestones h2,
+.history-table h2,
+.final-chapter h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.history-intro p,
+.final-chapter p {
+    font-size: 1em;
+    max-width: 600px;
+    margin: 0 auto;
+    text-indent: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.quote {
+    font-size: 0.9em;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.timeline-list {
+    list-style: none;
+    padding: 0;
+    counter-reset: step;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.timeline-list li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 15px;
+}
+
+.timeline-list li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--accent-color);
+    color: #111;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.timeline-list ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.timeline-list ul li::before {
+    content: '•';
+    color: var(--text-color);
+    font-size: 1em;
+    margin-right: 5px;
+}
+
+.event-table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 10px auto;
+    background: #2b2b2b;
+    color: var(--text-color);
+}
+
+.event-table th,
+.event-table td {
+    border: 1px solid var(--border-color);
+    padding: 8px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.event-table th {
+    background: var(--accent-color);
+    color: #111;
+    font-family: 'Roboto', sans-serif;
+}
+
+.event-table td {
+    font-family: Arial, sans-serif;
+}
+
+iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    border-radius: 4px;
+    margin: 10px auto;
+    display: block;
 }
 
 /* Стили для других страниц */
@@ -332,112 +472,6 @@ body {
     font-size: 16px;
     color: #ccc;
     margin-top: 5px;
-}
-
-.history-intro,
-.key-milestones,
-.turning-points,
-.final-chapter {
-    text-align: center;
-    padding: 40px 20px;
-    background: #111;
-    color: var(--text-color);
-}
-
-.history-intro h2,
-.key-milestones h2,
-.turning-points h2,
-.final-chapter h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.5em;
-    font-weight: 700;
-    color: var(--accent-color);
-    margin-bottom: 10px;
-}
-
-.history-intro p,
-.key-milestones p,
-.turning-points p,
-.final-chapter p {
-    font-size: 1.1em;
-    max-width: 600px;
-    margin: 0 auto;
-    text-indent: 20px;
-    line-height: 1.5;
-    text-align: justify;
-}
-
-.timeline-list {
-    list-style: none;
-    padding: 0;
-    counter-reset: step;
-    text-align: left;
-}
-
-.timeline-list li {
-    counter-increment: step;
-    position: relative;
-    padding-left: 40px;
-    margin-bottom: 20px;
-}
-
-.timeline-list li::before {
-    content: counter(step);
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: var(--accent-color);
-    color: #111;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 32px;
-    font-weight: bold;
-}
-
-.timeline-list ul {
-    list-style: none;
-    padding-left: 20px;
-    margin-top: 10px;
-}
-
-.timeline-list ul li::before {
-    content: '•';
-    color: var(--text-color);
-    font-size: 1em;
-    margin-right: 5px;
-}
-
-.highlight {
-    background: #111;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 4px solid var(--accent-color);
-}
-
-.media-intro {
-    text-align: center;
-    padding: 40px 20px;
-    background: #111;
-    color: var(--text-color);
-}
-
-.media-intro h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.5em;
-    font-weight: 700;
-    color: var(--accent-color);
-    margin-bottom: 10px;
-}
-
-.media-intro p {
-    font-size: 1.1em;
-    max-width: 600px;
-    margin: 0 auto;
-    text-indent: 20px;
-    line-height: 1.5;
-    text-align: justify;
 }
 
 .contact-form {
